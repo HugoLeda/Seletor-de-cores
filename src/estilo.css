@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    background: #00ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    height: auto;
+}
+
+section#corpo{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 40%;
+    margin: auto;
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.40)
+}
+
+div#res{
+    border-radius: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;   
+    height: 10px; 
+}
+section#corFinal{
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+    height: 100%;
+    width: 75%;
+    margin: auto;    
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.40);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: rgba(0, 0, 0, 0.3);
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;    
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: rgba(230, 230, 230, 1);
+    cursor: pointer;
+}
+
+div#cores{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 30px;
+}
+div#nomes{
+    width: 30%;
+}
+
+div#ranges{
+    width: 30%;
+}
+
+div#res{
+    width: auto;
+}
+/*
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 1);
+    cursor: pointer;
+}
+*/
+
+div#inputs{
+    padding-left: 5%;
+    width: fit-content;
+    margin-left: 30px;
+}
+
+.inputs{
+    outline: none;
+    width: 35%;
+    padding-bottom: 1%;
+    border-style: ridge;
+    border-color: rgba(230,230,230,0.8);
+    height: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de cores</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <section id="corpo">
+        <h1>Seletor de cores</h1>
+        <div id="cores">            
+            <div id="nomes">
+                <span>Red:</span>
+                <br>
+                <span>Green:</span>
+                <br>
+                <span>Blue:</span>
+                <br>
+                <span>Opacidade:</span>
+            </div>
+            <div id="ranges">  
+                <br>
+                <input type="range" name="red" id="red" class="slider" min="0" max="255" step="1" value="0" onchange="mudarValor(this.id, this.value)">
+                <br>              
+                <input type="range" name="green" id="green" class="slider" min="0" max="255" step="1" value="0" onchange="mudarValor(this.id, this.value)">
+                <br>                
+                <input type="range" name="blue" id="blue" class="slider" min="0" max="255" step="1" value="0" onchange="mudarValor(this.id, this.value)">
+                <br>
+                <input type="range" name="a" id="a" class="slider" min="0" max="100" step="1" value="100" onchange="mudarValor(this.id, this.value)">
+                <br>
+                <div id="res">
+                    <section id="corFinal">
+    
+                    </section>
+            </div>
+            </div> 
+            <div id="inputs">  
+                <input type="number" name="rtxt" id="rtxt" value="0" class="inputs" onkeyup="valorInput(this.id, this.value)">
+                <br>              
+                <input type="number" name="gtxt" id="gtxt" value="0" class="inputs" onkeyup="valorInput(this.id, this.value)">
+                <br>                
+                <input type="number" name="btxt" id="btxt" value="0" class="inputs" onkeyup="valorInput(this.id, this.value)">
+                <br>
+                <input type="number" name="atxt" id="atxt" value="0" class="inputs" onkeyup="valorInput(this.id, this.value)">
+            </div>            
+        </div>                    
+    </section>
+    <footer>
+        <p>&copy;João Hugo Leda</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
